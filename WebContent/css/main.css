@@ -70,12 +70,6 @@ a {
 	color: #333;
 }
 
-.btn--primary {
-  color: #fff;
-  background-color: #ffa500;
-  border: 1px solid #ffa500;
-}
-
 /* SECTION & INNER */
 
 .section {
@@ -98,6 +92,7 @@ header {
 
 .header--inner {
   height: 80px;
+  position: relative;
 }
 
 .menu-group {

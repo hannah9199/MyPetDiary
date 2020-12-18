@@ -89,7 +89,6 @@
                             		<c:if test="${whologin == 2}">
 										<li><a href="<%=NoForm%>#">관리자 메뉴</a></li>
 									</c:if>
-                            	<!-- 	<li><a href="#">관리자 메뉴</a></li> -->
                             	</ul>
                             </li>
                             

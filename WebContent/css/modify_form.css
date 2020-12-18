@@ -1,0 +1,68 @@
+
+
+.modify-table {
+	border-collapse: separate;
+	border-spacing: 0 12px;
+	border-radius: 10px;
+	width: 500px;
+	margin: auto;
+	padding: 5px;
+	font-size: 15px;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+input {
+	border-radius: 10px;
+	border: 2px solid #F8AD7B;
+}
+
+input:focus {
+	outline: none;
+	border: 3px solid #F8AD7B;
+}
+
+button {
+  font-size: 13px;
+  color: #3c3c3c;
+  background-color: #F8AD7B;
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+
+button:hover {
+	outline: none;
+	font-weight: 500;
+	color: #fff;
+}
+
+button:focus {
+	outline: none;
+	font-weight: 500;
+	color: #fff;
+}
+
+.button-group a {
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: #F8AD7B;
+	padding: 4px;
+	font-size: 13px;
+}
+
+.button-group a:hover {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+}
+
+.button-group a:focus {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+}
