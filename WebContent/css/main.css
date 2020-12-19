@@ -87,11 +87,11 @@ a {
 
 header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  background: #F8AD7B;
+  background: #2368B7;
 }
 
 .header--inner {
-  height: 80px;
+  height: 70px;
   position: relative;
 }
 
@@ -107,7 +107,7 @@ header {
 
 .logo a {
   font-size: 30px;
-  color: #ffffff;
+  color: #fff;
   width: 100%;
   height: 100%;
   display: block;
@@ -124,11 +124,11 @@ header {
 .main-menu li a {
   display: block;
   padding: 15px;
-  color: #3c3c3c;
+  color: #333;
 }
 
 .main-menu .hover-color:hover {
-  color: #fffefd;
+  color: #fff;
   display: block;
 }
 
@@ -139,7 +139,7 @@ header {
 	background-color: #fff;
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
 	border-radius: 5px;
-	color: #3c3c3c;
+	color: #333;
 	position: absolute;
 }
 
@@ -147,10 +147,11 @@ header {
 	display: inline-flex;
 	font-size: 13px;
 	text-align: center;
+	color: #3c3c3c;
 }
 
 .dropdown-submenu a:hover {
-	color: #F8AD7B;
+	color: #0D337A;
 	font-weight: 500;
 }
 .dropdown-shop:hover .dropdown-submenu {
@@ -173,7 +174,7 @@ header {
 .btn-group span {
   font-size: 13px;
   margin: 9px;
-  color: #3c3c3c;
+  color: #fff;
 }
 
 .btn-group a {
@@ -192,7 +193,7 @@ header {
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url(./../images/shop-cart.svg);
+  background-image: url(./../images/shop-cart.png);
   text-indent: -99999px;
 }
 
@@ -217,10 +218,10 @@ header {
   bottom: 0px;
   padding: 15px;
   font-size: 13px;
-  color: #3c3c3c;
+  color: #fff;
   text-align: center;
   position: absolute;
-  background-color: #F8AD7B;
+  background-color: #2368B7;
   box-shadow: 0 -5 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -230,4 +231,5 @@ header {
 
 .contact a {
 	font-weight: 500; 
+	color: #fff;
 }
