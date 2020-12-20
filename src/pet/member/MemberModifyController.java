@@ -18,6 +18,7 @@ public class MemberModifyController extends SuperClass {
 		String mID = request.getParameter("id");
 		
 		MemberDao mdao = new MemberDao();
+		Member bean = mdao.selectDataByID(mID);
 		super.doGet(request, response);
 	}
 	
