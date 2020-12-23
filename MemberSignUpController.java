@@ -34,12 +34,11 @@ public class MemberSignUpController extends SuperClass {
 		bean.setZipcode(request.getParameter("zipcode"));
 		bean.setPhone(request.getParameter("phone"));
 		
-		
-		//bean.setmStatus(Integer.parseInt(request.getParameter("status")));
-		if( request.getParameter("status") != null || request.getParameter("status").equals("") == false ){
-			bean.setStatus( Integer.parseInt( request.getParameter("status") ));	
-			
-		}
+		bean.setStatus(Integer.parseInt(request.getParameter("status")));
+//		if( request.getParameter("status") != null || request.getParameter("status").equals("") == false ){
+//			bean.setStatus( Integer.parseInt( request.getParameter("status") ));	
+//			System.out.println("status");
+//		}
 		//bean.setmlevel(Integer.parseInt(request.getParameter("mlevel")));
 		if( request.getParameter("mlevel") != null || request.getParameter("mlevel").equals("") == false ){
 			bean.setMlevel( Integer.parseInt( request.getParameter("mlevel") ));	
