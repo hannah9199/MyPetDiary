@@ -128,10 +128,10 @@
             </div>
         </footer>
     </div>
-    <c:if test="${not empty requestScope.errmsg}">
+    <c:if test="${not empty requestScope.errormsg}">
 		<div class="alert alert-danger alert-dismissable">
     		<a href="#" id="myalert" class="close" data-dismiss="alert" aria-label="close">닫기</a>
-    		<strong>${requestScope.errmsg}</strong>
+    		<strong>${requestScope.errormsg}</strong>
 		</div>
 	</c:if>
 	

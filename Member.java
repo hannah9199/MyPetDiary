@@ -10,6 +10,7 @@ package pet.bean;
 		private String zipcode; // 우편 번호
 		private String address1; // 주소 1
 		private String address2; // 주소 2
+		private String pet;// 애완동물 선택 
 		private int mpoint; // 회원 포인트
 		private int mlevel; // 회원 등급 (기본 1, 우수 2, 특급 3)
 		private String created_at; // 가입 일자
@@ -121,12 +122,22 @@ package pet.bean;
 			this.status = status;
 		}
 
+		public String getPet() {
+			return pet;
+		}
+
+		public void setPet(String pet) {
+			this.pet = pet;
+		}
+
 		@Override
 		public String toString() {
 			return "Member [id=" + id + ", name=" + name + ", nickname=" + nickname + ", password=" + password
 					+ ", email=" + email + ", phone=" + phone + ", zipcode=" + zipcode + ", address1=" + address1
-					+ ", address2=" + address2 + ", mpoint=" + mpoint + ", mlevel=" + mlevel + ", created_at="
-					+ created_at + ", status=" + status + "]";
+					+ ", address2=" + address2 + ", pet=" + pet + ", mpoint=" + mpoint + ", mlevel=" + mlevel
+					+ ", created_at=" + created_at + ", status=" + status + "]";
 		}
+
+		
 
 	}

@@ -6,6 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<script>
 		function CheckClose() {
 			self.close();
@@ -27,16 +28,16 @@
 		  padding: 7px;
 		}
 		
-		.nickcheck-form {
+		.idcheck-form {
 			padding: 20px;	
 		}
 	</style>
 </head>
 
 <body>
-	<div class="nickcheck-form">
+	<div class="idcheck-form">
 		<p align="center">${message}</p>
-		<div class="nick-check-button" align="center">
+		<div class="id-check-button" align="center">
 			<button type="button" onclick="CheckClose();">닫&nbsp;&nbsp;기</button>
 		</div>
 	</div>

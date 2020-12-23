@@ -11,8 +11,10 @@ public class MemberDao extends SuperDao {
 
 	public int InsertData(Member bean) {
 		System.out.println( bean.toString() ); 
-		String sql = " insert into member(id, name, nickname, password, email, phone, zipcode, address1, address2, mpoint, mlevel, created_at, status) " ; 
-		sql += " values(                    ?,   ?,    ?,          ?,     ?,     ?,     ?,        ?,         ?,      ?,      ?,        ?,         ?) " ;
+		String sql = " insert into member(id, name, nickname, password, email, phone, zipcode, address1, address2,   pet) " ; 
+		sql += " values(                    ?,   ?,    ?,          ?,     ?,     ?,       ?,         ?,        ?,     ?) " ;
+		
+		//System.out.println("ok");
 		
 		PreparedStatement pstmt = null ;
 		int cnt = -99999 ;
@@ -20,6 +22,8 @@ public class MemberDao extends SuperDao {
 			conn = super.getConnection() ;
 			conn.setAutoCommit( false );
 			pstmt = super.conn.prepareStatement(sql) ;
+			
+			System.out.println("ok");
 			
 			pstmt.setString(1, bean.getId());
 			pstmt.setString(2, bean.getName());
@@ -30,10 +34,8 @@ public class MemberDao extends SuperDao {
 			pstmt.setString(7, bean.getZipcode());
 			pstmt.setString(8, bean.getAddress1());
 			pstmt.setString(9, bean.getAddress2());
-			pstmt.setInt(10, bean.getMpoint());
-			pstmt.setInt(11, bean.getMlevel());
-			pstmt.setString(12, bean.getCreated_at());
-			pstmt.setInt(13, bean.getStatus());
+			//pstmt.setString(10, bean.getCreated_at());
+			pstmt.setString(10, bean.getPet());
 			
 			cnt = pstmt.executeUpdate() ; 
 			conn.commit(); 
@@ -87,12 +89,13 @@ public class MemberDao extends SuperDao {
 				bean.setNickname(rs.getString("nickname"));
 				bean.setPassword(rs.getString("password"));
 				bean.setZipcode(rs.getString("zipcode"));
-				bean.setCreated_at(rs.getString("created_at"));
+				//bean.setCreated_at(rs.getString("created_at"));
 				bean.setPhone(rs.getString("phone"));
+				bean.setPet(rs.getString("pet"));
 				
-				bean.setMlevel(rs.getInt("mlevel"));
-				bean.setStatus(rs.getInt("status"));
-				bean.setMpoint(rs.getInt("mpoint"));
+				//bean.setMlevel(rs.getInt("mlevel"));
+				//bean.setStatus(rs.getInt("status"));
+				//bean.setMpoint(rs.getInt("mpoint"));
 				
 			}
 			System.out.println("ok");
@@ -139,12 +142,13 @@ public class MemberDao extends SuperDao {
 				bean.setPassword(rs.getString("password"));
 				bean.setZipcode(rs.getString("zipcode"));
 				bean.setPhone(rs.getString("phone"));
-				bean.setCreated_at(rs.getString("created_at"));
+				//bean.setCreated_at(rs.getString("created_at"));
+				bean.setPet(rs.getString("pet"));
 				
 				//숫자 
-				bean.setMlevel(rs.getInt("mlevel"));
-				bean.setStatus(rs.getInt("status"));
-				bean.setMpoint(rs.getInt("mpoint"));
+				//bean.setMlevel(rs.getInt("mlevel"));
+				//bean.setStatus(rs.getInt("status"));
+				//bean.setMpoint(rs.getInt("mpoint"));
 				
 			}
 			System.out.println("ok");
